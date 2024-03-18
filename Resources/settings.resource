@@ -1,4 +1,4 @@
 *** Settings ***
-Library     ../Lib/ExampleLibrary.py
+Library     ../Libraries/ExampleLibrary.py
 Resource    variables.resource
 Resource    keywords.resource
