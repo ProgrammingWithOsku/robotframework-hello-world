@@ -1,6 +1,6 @@
 pipeline {
-    // No agent directive specified, so Jenkins will run the pipeline on the master node by default
-
+    agent any // Run on any available executor (including master)
+    
     stages {
         stage('Install dependencies') {
             steps {
