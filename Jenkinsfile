@@ -7,8 +7,8 @@ pipeline {
                 script {
                     // Activate the virtual environment using Pipenv
                     sh 'pip3 install --user pipenv'
-                    sh 'pipenv shell && pipenv install --deploy --dev'
-                    sh 'robot path/to/robot_framework_project/Tests/HelloWorld.robot'
+                    sh 'python3 -m pipenv shell && pipenv install --deploy --dev'
+                    sh 'robot ./Tests/HelloWorld.robot'
                 }
             }
         }
