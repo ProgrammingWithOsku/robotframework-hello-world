@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'python3' }
+    // No agent directive specified, so Jenkins will run the pipeline on the master node by default
 
     stages {
         stage('Install dependencies') {
